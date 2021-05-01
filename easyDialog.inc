@@ -53,7 +53,7 @@ stock Dialog_Close(playerid)
 	s_DialogName[playerid]{0} = 0;
 	s_DialogOpened[playerid] = false;
 
-	return ShowPlayerDialog(playerid, -1, DIALOG_STYLE_MSGBOX, " ", " ", " ", "");
+	return 0;
 }
 
 stock Dialog_Open(playerid, const function[], style, const caption[], const info[], const button1[], const button2[], {Float,_}:...)
